@@ -8,6 +8,15 @@ tasks:
     cmds:
       - task: ci
 
+  pre-commit:
+    cmd:
+      task: detect
+
+  detect:
+    desc: Detect secret leak in current repository
+    cmds:
+      - docker run --rm -it -v "$PWD:/pwd" trufflesecurity/trufflehog:latest git file:///pwd --only-verified --fail
+
   ci:
     desc: Generate GitHub Action
     summary: |
