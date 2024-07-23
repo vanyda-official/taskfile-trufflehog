@@ -1,0 +1,7 @@
+NAME=taskfile-trufflehog
+DISPLAY_NAME=Trufflehog Taskfile
+DESCRIPTION=Reusable Taskfile that provides common trufflehog features for various git projects.
+SOURCE=https://github.com/vanyda-official/taskfile-trufflehog
+
+GITHUB_OWNER=vanyda-official
+GITHUB_REPOSITORY=taskfile-trufflehog
